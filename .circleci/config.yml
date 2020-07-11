@@ -37,7 +37,7 @@ jobs:
                   key: v1-dependencies-{{ checksum "pom.xml" }}
 
             - run: git config user.email "thi.renaux@gmail.com"
-            - run: git config user.name "Via CircleCI Build"
+            - run: git config user.name "ThierryRenaux"
             # run tests!
             - run: mvn -X --batch-mode release:prepare release:perform -s .circleci/settings.xml
 
